@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Emma Wilson",
+    "picture": "https://i.pravatar.cc/150?u=emma",
+    "email": "emma.w@outlook.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["Family"],
+    "bio": "Former colleague, great mentor in project management.",
+    "goal": 30,
+    "next_due_date": "Feb 27, 2026"
+  },
+  {
+    "id": 2,
+    "name": "David Kim",
+    "picture": "https://i.pravatar.cc/150?u=david",
+    "email": "david.k@techcorp.com",
+    "days_since_contact": 12,
+    "status": "on-track",
+    "tags": ["Work"],
+    "bio": "Lead developer. We usually discuss system architecture.",
+    "goal": 14,
+    "next_due_date": "April 20, 2026"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://i.pravatar.cc/150?u=lisa",
+    "email": "lisa.n@gmail.com",
+    "days_since_contact": 28,
+    "status": "almost-due",
+    "tags": ["Hobby", "Travel"],
+    "bio": "Hiking buddy. Always planning the next mountain trip.",
+    "goal": 30,
+    "next_due_date": "April 16, 2026"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://i.pravatar.cc/150?u=james",
+    "email": "j.wright@university.edu",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["College"],
+    "bio": "Best friend from freshman year. Plays a mean guitar.",
+    "goal": 7,
+    "next_due_date": "April 18, 2026"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://i.pravatar.cc/150?u=sarah",
+    "email": "sarah.designs@freelance.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["Work", "Hobby"],
+    "bio": "UI Designer. We share a passion for minimalist aesthetics.",
+    "goal": 21,
+    "next_due_date": "March 15, 2026"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "picture": "https://i.pravatar.cc/150?u=marcus",
+    "email": "marcus.j@fitness.com",
+    "days_since_contact": 19,
+    "status": "almost-due",
+    "tags": ["Gym"],
+    "bio": "Accountability partner for early morning workouts.",
+    "goal": 20,
+    "next_due_date": "April 15, 2026"
+  },
+  {
+    "id": 7,
+    "name": "Aisha Patel",
+    "picture": "https://i.pravatar.cc/150?u=aisha",
+    "email": "aisha.p@medcenter.org",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["Close Friend"],
+    "bio": "Childhood friend. The most reliable person I know.",
+    "goal": 10,
+    "next_due_date": "April 22, 2026"
+  },
+  {
+    "id": 8,
+    "name": "Tom Baker",
+    "picture": "https://i.pravatar.cc/150?u=tom",
+    "email": "baker.tom@books.com",
+    "days_since_contact": 80,
+    "status": "overdue",
+    "tags": ["Hobby"],
+    "bio": "Fellow book club member. Expert on sci-fi literature.",
+    "goal": 60,
+    "next_due_date": "Jan 20, 2026"
+  },
+  {
+    "id": 9,
+    "name": "Olivia Martinez",
+    "picture": "https://i.pravatar.cc/150?u=olivia",
+    "email": "olivia.m@startup.io",
+    "days_since_contact": 15,
+    "status": "on-track",
+    "tags": ["Mentee"],
+    "bio": "Helping her navigate her first junior dev role.",
+    "goal": 30,
+    "next_due_date": "April 30, 2026"
+  },
+  {
+    "id": 10,
+    "name": "Ryan O'Brien",
+    "picture": "https://i.pravatar.cc/150?u=ryan",
+    "email": "ryan.ob@music.com",
+    "days_since_contact": 35,
+    "status": "almost-due",
+    "tags": ["Band"],
+    "bio": "Drummer in our weekend garage band.",
+    "goal": 40,
+    "next_due_date": "April 25, 2026"
+  }
+]
