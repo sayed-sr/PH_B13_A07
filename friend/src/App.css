@@ -1,4 +1,4 @@
-/* Global Reset & Base Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,25 +12,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* The Layout Wrapper */
+
 .app-wrapper {
   display: flex;
+
+
+  /* border: 1px solid red; */
   flex-direction: column;
-  min-height: 100vh; /* Takes full height of the screen */
-  background-color: #f9fafb; /* Your light gray background */
+  min-height: 100vh; 
+  background-color: #f9fafb; 
 }
 
-/* Ensures content expands to push footer down */
+
 .main-content {
   flex-grow: 1;
 }
 
-/* 404 Page Styling */
+
 .error-page {
   height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid red; */
   justify-content: center;
   text-align: center;
 }
@@ -44,6 +48,7 @@ body {
 
 .error-message {
   font-size: 1.25rem;
+  /* border: 1px solid red; */
   color: #6b7280;
   margin: 16px 0;
 }
@@ -52,6 +57,7 @@ body {
   color: #059669;
   text-decoration: underline;
   font-weight: 500;
+  /* border: 1px solid red; */
 }
 
 .back-home-link:hover {

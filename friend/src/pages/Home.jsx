@@ -13,33 +13,37 @@ const Home = () => {
 
   if (loading) return (
     <div className="loader-container">
+
+
       <div className="spinner"></div>
     </div>
   );
 
   return (
     <div className="home-container">
-      {/* Banner Section */}
+      
       <section className="hero-banner">
         <h1 className="hero-title">Friends to keep close in your life</h1>
+
         <p className="hero-subtitle">
           Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
         </p>
         <button className="add-friend-btn">
-          <span className="plus-icon">+</span> Add a Friend
+             <span className="plus-icon">+</span> Add a Friend
         </button>
       </section>
 
-      {/* Summary Cards */}
+     
       <div className="summary-grid">
         {[
           { label: 'Total Friends', val: 10 },
           { label: 'On Track', val: 4 },
-          { label: 'Need Attention', val: 6 },
+      { label: 'Need Attention', val: 3 },
           { label: 'Interactions', val: 12 }
         ].map((item, idx) => (
           <div key={idx} className="summary-card">
-            <h2 className="summary-value">{item.val}</h2>
+                 <h2 className="summary-value">{item.val}</h2>
+
             <p className="summary-label">{item.label}</p>
           </div>
         ))}
@@ -47,10 +51,11 @@ const Home = () => {
 
       <h2 className="section-title">Your Friends</h2>
       
-      {/* Friends Grid */}
+     
       <div className="friends-display-grid">
+
         {friendsData.map(friend => (
-          <FriendCard key={friend.id} friend={friend} />
+                   <FriendCard key={friend.id} friend={friend} />
         ))}
       </div>
     </div>

@@ -9,6 +9,7 @@ const Stats = () => {
   const data = [
     { name: 'Text', value: timeline.filter(t => t.type === 'Text').length },
     { name: 'Call', value: timeline.filter(t => t.type === 'Call').length },
+
     { name: 'Video', value: timeline.filter(t => t.type === 'Video').length },
   ];
 
@@ -18,29 +19,35 @@ const Stats = () => {
     <div className="stats-page-wrapper">
       <h1 className="stats-main-title">Friendship Analytics</h1>
       
+
       <div className="analytics-container">
-        <h3 className="chart-heading">By Interaction Type</h3>
+
+   <h3 className="chart-heading">By Interaction Type</h3>
         
-        <div className="chart-viewport">
+                           <div className="chart-viewport">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie 
+
                 data={data} 
                 innerRadius={100} 
                 outerRadius={140} 
                 paddingAngle={5} 
                 dataKey="value"
               >
-                {data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} stroke="none" />
+       {data.map((entry, index) => (
+                  
+         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} stroke="none" />
                 ))}
               </Pie>
               <Tooltip />
+
               <Legend verticalAlign="bottom" iconType="circle" />
-            </PieChart>
-          </ResponsiveContainer>
+   </PieChart>   
+   </ResponsiveContainer>
         </div>
       </div>
+
     </div>
   );
 };

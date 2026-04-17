@@ -7,6 +7,7 @@ import './FriendDetails.css';
 
 const FriendDetails = () => {
   const { id } = useParams();
+
   const { addInteraction } = useFriends();
   const friend = friendsData.find(f => f.id === parseInt(id));
 
@@ -14,18 +15,20 @@ const FriendDetails = () => {
 
   const handleAction = (type) => {
     addInteraction(type, friend.name);
+
     toast.success(`${type} interaction logged with ${friend.name}!`);
   };
 
   return (
     <div className="details-page-container">
-      {/* Left Column: Profile Card & Management */}
+      
       <div className="left-column">
         <div className="profile-main-card">
           <img src={friend.picture} className="profile-large-img" alt={friend.name} />
           <h2 className="profile-name-title">{friend.name}</h2>
           <div className="badge-row">
              <span className="status-pill overdue-pill">{friend.status}</span>
+
              <span className="status-pill tag-pill-detail">{friend.tags[0]}</span>
           </div>
           <p className="profile-bio">"{friend.bio}"</p>
@@ -36,56 +39,60 @@ const FriendDetails = () => {
           <button className="secondary-btn">
             <img src="/assets/logo.png" className="btn-icon-small" /> Snooze 2 Weeks
           </button>
+
           <button className="secondary-btn">Archive</button>
           <button className="danger-btn">Delete</button>
         </div>
       </div>
 
-      {/* Right Column: Stats & Actions */}
+      
       <div className="right-column">
-        {/* Stats Row */}
+       
         <div className="stats-row">
           <div className="stat-box">
-            <h4 className="stat-value">{friend.days_since_contact}</h4>
+                    <h4 className="stat-value">{friend.days_since_contact}</h4>
             <p className="stat-label">Days Since Contact</p>
           </div>
           <div className="stat-box">
             <h4 className="stat-value">{friend.goal}</h4>
-            <p className="stat-label">Goal (Days)</p>
+              <p className="stat-label">Goal (Days)</p>
           </div>
           <div className="stat-box accent-text">
             <h4 className="stat-value">{friend.next_due_date}</h4>
-            <p className="stat-label">Next Due</p>
+   <p className="stat-label">Next Due</p>
           </div>
         </div>
 
-        {/* Relationship Goal Card */}
+       
         <div className="goal-card">
           <div>
-            <h3 className="card-heading">Relationship Goal</h3>
+                <h3 className="card-heading">Relationship Goal</h3>
             <p className="card-subtext">Connect every <strong>{friend.goal} days</strong></p>
           </div>
+
           <button className="edit-btn">Edit</button>
         </div>
 
-        {/* Quick Check-In Section */}
+        
         <div className="check-in-card">
           <h3 className="card-heading margin-bottom">Quick Check-In</h3>
           <div className="check-in-grid">
+
             <button onClick={() => handleAction('Call')} className="check-in-btn">
               <img src="/assets/call.png" alt="Call" />
               <span>Call</span>
-            </button>
+      </button>
             <button onClick={() => handleAction('Text')} className="check-in-btn">
               <img src="/assets/text.png" alt="Text" />
-              <span>Text</span>
+                   <span>Text</span>
             </button>
+
             <button onClick={() => handleAction('Video')} className="check-in-btn">
               <img src="/assets/video.png" alt="Video" />
               <span>Video</span>
             </button>
-          </div>
-        </div>
+      </div>
+       </div>
       </div>
     </div>
   );

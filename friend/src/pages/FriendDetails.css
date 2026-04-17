@@ -1,13 +1,13 @@
 .details-page-container {
   max-width: 1280px;
   margin: 0 auto;
+  /* border: 1px solid red; */
   padding: 48px 40px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 40px;
 }
 
-/* Responsive: Stack on mobile */
 @media (max-width: 768px) {
   .details-page-container {
     grid-template-columns: 1fr;
@@ -18,11 +18,12 @@
   }
 }
 
-/* Left Column Styling */
+
 .left-column {
   grid-column: span 4;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
   gap: 24px;
 }
 
@@ -31,6 +32,7 @@
   padding: 32px;
   border-radius: 20px;
   border: 1px solid #e5e7eb;
+  /* border: 1px solid red; */
   text-align: center;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -64,8 +66,14 @@
   text-transform: uppercase;
 }
 
-.overdue-pill { background: #fee2e2; color: #dc2626; }
-.tag-pill-detail { background: #dcfce7; color: #16a34a; }
+.overdue-pill { 
+    background: #fee2e2; 
+    /* border: 1px solid red; */
+    color: #dc2626; }
+.tag-pill-detail { 
+    background: #dcfce7;
+    /* border: 1px solid red; */
+     color: #16a34a; }
 
 .profile-bio {
   font-style: italic;
@@ -75,10 +83,10 @@
 
 .profile-email {
   font-size: 0.875rem;
+  /* border: 1px solid red; */
   color: #9ca3af;
 }
 
-/* Action Buttons */
 .action-buttons-stack {
   display: flex;
   flex-direction: column;
@@ -92,6 +100,7 @@
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   font-weight: 500;
+  /* border: 1px solid red; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -100,14 +109,19 @@
   transition: background 0.2s;
 }
 
-.secondary-btn:hover { background: #f9fafb; }
+.secondary-btn:hover { 
+    background: #f9fafb; 
+/* border: 1px solid red; */}
 .danger-btn { color: #ef4444; }
-.danger-btn:hover { background: #fef2f2; }
+.danger-btn:hover { 
+    background: #fef2f2;
+/* border: 1px solid red; */ }
 
-/* Right Column Styling */
+
 .right-column {
   grid-column: span 8;
   display: flex;
+  /* border: 1px solid red; */
   flex-direction: column;
   gap: 32px;
 }
@@ -135,10 +149,12 @@
 .stat-label {
   font-size: 0.75rem;
   color: #9ca3af;
+  /* border: 1px solid red; */
   margin: 4px 0 0;
 }
 
-.accent-text .stat-value { color: #059669; }
+.accent-text .stat-value { 
+    color: #059669; }
 
 /* Goal & Check-in Cards */
 .goal-card, .check-in-card {
@@ -154,9 +170,19 @@
   align-items: center;
 }
 
-.card-heading { font-weight: 700; font-size: 1.125rem; }
-.margin-bottom { margin-bottom: 24px; }
-.card-subtext { color: #6b7280; margin-top: 4px; }
+.card-heading { font-weight: 700;
+    /* border: 1px solid red; */ 
+    font-size: 1.125rem;
+ }
+
+
+.margin-bottom { 
+    margin-bottom: 24px; 
+}
+.card-subtext { 
+    color: #6b7280;
+    /* border: 1px solid red; */ 
+    margin-top: 4px; }
 
 .check-in-grid {
   display: grid;
