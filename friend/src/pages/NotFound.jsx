@@ -12,7 +12,7 @@ const NotFound = () => {
         
         <div className="notfound-image-container">
           
-          <img src="/assets/logo.png" alt="Lost" className="notfound-img" />
+        <img src="/assets/logo.png" alt="Lost" className="notfound-img" />
         </div>
 
                          <h2 className="notfound-title">Oops! Page Not Found</h2>
