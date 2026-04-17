@@ -1,0 +1,62 @@
+.notfound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Takes up most of the screen height */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.notfound-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.notfound-code {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #1e3a34; /* Your brand green */
+  line-height: 1;
+  margin: 0;
+  opacity: 0.1; /* Makes it a subtle background effect */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 24px;
+  filter: grayscale(1); /* Makes it look a bit "lost" */
+  opacity: 0.8;
+}
+
+.notfound-title {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.notfound-text {
+  color: #6b7280;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.notfound-btn {
+  display: inline-block;
+  background-color: #1e3a34;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.notfound-btn:hover {
+  background-color: #152925;
+  transform: translateY(-2px);
+}
