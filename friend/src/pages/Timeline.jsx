@@ -15,9 +15,9 @@ const Timeline = () => {
   });
 
   const getIcon = (type) => {
-    if (type === 'Call') return '/src/assets/call.png';
-    if (type === 'Text') return '/src/assets/text.png';
-    return '/src/assets/video.png';
+    if (type === 'Call') return '/assets/call.png';
+    if (type === 'Text') return '/assets/text.png';
+    return '/assets/video.png';
   };
 
   return (
@@ -68,7 +68,7 @@ const Timeline = () => {
           ))
         ) : (
           <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-gray-300">
-            <img src="/src/assets/text.png" className="w-16 h-16 mx-auto mb-4 opacity-20 grayscale" alt="Empty" />
+            <img src="/assets/text.png" className="w-16 h-16 mx-auto mb-4 opacity-20 grayscale" alt="Empty" />
             <h3 className="text-xl font-bold text-gray-400">No interactions logged yet</h3>
             <p className="text-gray-400">Head to a friend's profile to start a check-in!</p>
           </div>

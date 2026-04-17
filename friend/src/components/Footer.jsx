@@ -20,13 +20,13 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             <a href="#" className="bg-white p-2.5 rounded-full transition-transform hover:scale-110">
-              <img src="/src/assets/instagram.png" alt="Instagram" className="w-5 h-5" />
+              <img src="/assets/instagram.png" alt="Instagram" className="w-5 h-5" />
             </a>
             <a href="#" className="bg-white p-2.5 rounded-full transition-transform hover:scale-110">
-              <img src="/src/assets/facebook.png" alt="Facebook" className="w-5 h-5" />
+              <img src="/assets/facebook.png" alt="Facebook" className="w-5 h-5" />
             </a>
             <a href="#" className="bg-white p-2.5 rounded-full transition-transform hover:scale-110">
-              <img src="/src/assets/twitter.png" alt="Twitter" className="w-5 h-5" />
+              <img src="/assets/twitter.png" alt="Twitter" className="w-5 h-5" />
             </a>
           </div>
         </div>

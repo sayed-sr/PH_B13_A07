@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-10 py-5 bg-white border-b sticky top-0 z-50">
       <NavLink to="/">
-        <img src="/src/assets/logo.png" alt="Logo" className="h-8" />
+        <img src="/assets/logo.png" alt="Logo" className="h-8" />
       </NavLink>
       <div className="flex gap-6">
         <NavLink to="/" className={linkStyles}><Home size={18}/> Home</NavLink>

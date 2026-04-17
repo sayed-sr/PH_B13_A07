@@ -32,7 +32,7 @@ const FriendDetails = () => {
         </div>
 
         <button className="w-full py-3 bg-white border rounded-xl flex items-center justify-center gap-2 hover:bg-gray-50">
-          <img src="/src/assets/logo.png" className="w-4 h-4" /> Snooze 2 Weeks
+          <img src="/assets/logo.png" className="w-4 h-4" /> Snooze 2 Weeks
         </button>
         <button className="w-full py-3 bg-white border rounded-xl flex items-center justify-center gap-2 hover:bg-gray-50">
           Archive
@@ -74,15 +74,15 @@ const FriendDetails = () => {
           <h3 className="font-bold mb-6">Quick Check-In</h3>
           <div className="grid grid-cols-3 gap-6">
             <button onClick={() => handleAction('Call')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-xl hover:bg-gray-100">
-              <img src="/src/assets/call.png" className="w-8" />
+              <img src="/assets/call.png" className="w-8" />
               <span className="font-medium">Call</span>
             </button>
             <button onClick={() => handleAction('Text')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-xl hover:bg-gray-100">
-              <img src="/src/assets/text.png" className="w-8" />
+              <img src="/assets/text.png" className="w-8" />
               <span className="font-medium">Text</span>
             </button>
             <button onClick={() => handleAction('Video')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-xl hover:bg-gray-100">
-              <img src="/src/assets/video.png" className="w-8" />
+              <img src="/assets/video.png" className="w-8" />
               <span className="font-medium">Video</span>
             </button>
           </div>
