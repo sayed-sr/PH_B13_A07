@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px; /* Equivalent to px-10 py-5 */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-logo {
+  height: 32px; /* h-8 */
+  display: block;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px; /* gap-6 */
+}
+
+/* Base style for all links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* gap-2 */
+  padding: 8px 16px; /* px-4 py-2 */
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: #4b5563; /* text-gray-600 */
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+/* Style for the active page link */
+.nav-link.active {
+  background-color: #1e3a34; /* Your primary brand green */
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+}
+
+/* Ensure icons align nicely with text */
+.nav-link svg {
+  flex-shrink: 0;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .nav-menu {
+    gap: 12px;
+  }
+  .nav-link span {
+    display: none; /* Hide text on small screens, keep icons */
+  }
+}

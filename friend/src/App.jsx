@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { FriendProvider } from './context/FriendContext';
 
@@ -13,11 +13,15 @@ import FriendDetails from './pages/FriendDetails';
 import Timeline from './pages/Timeline';
 import Stats from './pages/Stats';
 
+// Styles
+import './App.css';
+import './media.css';
+
 const NotFound = () => (
-  <div className="h-screen flex flex-col items-center justify-center text-center">
-    <h1 className="text-6xl font-bold text-[#1e3a34]">404</h1>
-    <p className="text-xl text-gray-500 my-4">Oops! This page doesn't exist.</p>
-    <a href="/" className="text-emerald-600 underline">Go back home</a>
+  <div className="error-page">
+    <h1 className="error-code">404</h1>
+    <p className="error-message">Oops! This page doesn't exist.</p>
+    <Link to="/" className="back-home-link">Go back home</Link>
   </div>
 );
 
@@ -25,10 +29,10 @@ function App() {
   return (
     <FriendProvider>
       <Router>
-        <div className="min-h-screen flex flex-col bg-[#f9fafb]">
+        <div className="app-wrapper">
           <Toaster position="top-right" />
           <Navbar />
-          <main className="flex-grow">
+          <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/friend/:id" element={<FriendDetails />} />

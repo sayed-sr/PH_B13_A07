@@ -1,0 +1,166 @@
+.timeline-page-wrapper {
+  max-width: 896px; /* max-w-4xl */
+  margin: 0 auto;
+  padding: 64px 24px; /* py-16 px-6 */
+}
+
+.timeline-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px; /* mb-10 */
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .timeline-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.timeline-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  color: #1e3a34;
+  margin: 0;
+}
+
+.timeline-controls {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .timeline-controls {
+    width: auto;
+  }
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  color: #9ca3af;
+}
+
+.search-input {
+  padding-left: 40px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #10b981; /* Focus ring */
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-dropdown:focus {
+  outline: none;
+}
+
+/* Timeline List */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  background-color: #f9fafb;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.type-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0;
+}
+
+.item-date {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  background-color: white;
+  border-radius: 24px;
+  border: 1px dashed #d1d5db;
+}
+
+.empty-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.empty-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.empty-text {
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

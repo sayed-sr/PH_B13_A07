@@ -1,0 +1,95 @@
+/* ==========================================
+   TABLET & MOBILE RESPONSIVENESS
+   ========================================== */
+
+/* For Screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+  .details-page-container {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .left-column {
+    grid-column: span 5; /* Give profile more space on tablets */
+  }
+
+  .right-column {
+    grid-column: span 7;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* For Screens smaller than 768px (Mobile Devices) */
+@media (max-width: 768px) {
+  /* Global Adjustments */
+  .home-container, .timeline-page-wrapper, .stats-page-wrapper {
+    padding: 24px 16px;
+  }
+
+  /* Grid Conversions: Change grids to single columns */
+  .friends-display-grid, 
+  .summary-grid, 
+  .stats-row, 
+  .check-in-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  /* Friend Details Page: Stack columns */
+  .details-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-link span {
+    display: none; /* Hide text, show only icons for better fit */
+  }
+
+  /* Typography Adjustments */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .footer-title {
+    font-size: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .legal-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* For very small screens (under 480px) */
+@media (max-width: 480px) {
+  .stat-box {
+    padding: 16px;
+  }
+
+  .summary-card {
+    padding: 20px;
+  }
+
+  .check-in-btn {
+    padding: 16px;
+  }
+}

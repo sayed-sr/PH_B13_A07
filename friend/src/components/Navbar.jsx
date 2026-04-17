@@ -1,22 +1,29 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, Clock, BarChart3 } from 'lucide-react';
+import './Navbar.css';
 
 const Navbar = () => {
-  const linkStyles = ({ isActive }) => 
-    `flex items-center gap-2 px-4 py-2 rounded-lg transition-all font-medium ${
-      isActive ? 'bg-[#1e3a34] text-white shadow-lg' : 'text-gray-600 hover:bg-gray-100'
-    }`;
+  // Logic to determine which class to apply based on navigation state
+  const getLinkClass = ({ isActive }) => 
+    isActive ? 'nav-link active' : 'nav-link';
 
   return (
-    <nav className="flex items-center justify-between px-10 py-5 bg-white border-b sticky top-0 z-50">
-      <NavLink to="/">
-        <img src="/assets/logo.png" alt="Logo" className="h-8" />
+    <nav className="navbar">
+      <NavLink to="/" className="navbar-logo-link">
+        <img src="/assets/logo.png" alt="Logo" className="navbar-logo" />
       </NavLink>
-      <div className="flex gap-6">
-        <NavLink to="/" className={linkStyles}><Home size={18}/> Home</NavLink>
-        <NavLink to="/timeline" className={linkStyles}><Clock size={18}/> Timeline</NavLink>
-        <NavLink to="/stats" className={linkStyles}><BarChart3 size={18}/> Stats</NavLink>
+
+      <div className="nav-menu">
+        <NavLink to="/" className={getLinkClass}>
+          <Home size={18}/> <span>Home</span>
+        </NavLink>
+        <NavLink to="/timeline" className={getLinkClass}>
+          <Clock size={18}/> <span>Timeline</span>
+        </NavLink>
+        <NavLink to="/stats" className={getLinkClass}>
+          <BarChart3 size={18}/> <span>Stats</span>
+        </NavLink>
       </div>
     </nav>
   );
